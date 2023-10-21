@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <title>login</title>
+</head>
+
+<body dir="rtl" class="bg-body-blue  px-5 max-ssm:p-1 py-8">
+  <!-- container  -->
+  <div class="max-h-[850px] m-auto w-full flex max-sm:m-auto max-lg:mx-auto max-sm:w-9/12 max-ssm:min-w-[350px] max-ssm:mx-auto">
+    <!-- two parts -->
+    <!-- part1 -->
+    <div
+      class=" max-lg:bg-custom-blue bg-custom-blue w-1/2 rounded-r-2xl max-lg:w-full max-md:w-11/12 max-md:mx-auto max-sm:w-full max-ssm:w-full  max-lg:rounded-2xl p-10">
+      <!-- buttons for smaller screen view -->
+      <!-- button one -->
+      <div class="hidden max-lg:block max-lg:flex max-lg:justify-between max-lg:mx-auto max-lg:w-64">
+        <button
+          class="max-lg:pb-2 max-lg:pointer max-lg:bg-custom-orange max-lg:mx-4 max-lg:px-2 max-lg:h-12 max-lg:w-171 max-lg:mt-20 max-lg:text-center max-lg:rounded-xl max-lg:text-white max-lg:text-xl max-lg:font-bold max-lg:font-['Yekan Bakh FaNum'] transition"
+          onclick="openModal('modelConfirm')">
+          ورود
+        </button>
+        <!-- popup window -->
+        <div id="modelConfirm"
+          class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+          <div class="relative top-24 mx-auto shadow-xl rounded-md bg-white max-w-md">
+            <div class="flex justify-end p-2">
+              <button onclick="closeModal('modelConfirm')" type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="p-6 pt-0 text-center">
+              <svg class="mx-auto" width="161" height="154" viewBox="0 0 161 154" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_7_39)">
+                  <rect x="20" y="20" width="101" height="94" rx="32" fill="#EA8E38" />
+                  <path
+                    d="M67.828 45.4151L96.0321 73.505V88.5849H82.8702V78.926L62.3852 58.5237H58.1298V88.5849H44.968V45.4151H67.828ZM82.8702 60.3964V45.4151H96.0321V60.3964H82.8702Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <filter id="filter0_d_7_39" x="0" y="0" width="161" height="154" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dx="10" dy="10" />
+                    <feGaussianBlur stdDeviation="15" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7_39" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_39" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+              <h3 class="mx-auto w-232 h-62 text-black text-[35px] font-black font-['Yekan Bakh FaNum']">
+                ورود به داشبورد
+              </h3>
+              <div class="mt-5 mx-auto h-14">
+                <a href="../src/register.html" class="text-blue-500 text-xl font-bold font-['Yekan Bakh FaNum'] mt-3">هنوز ثبت نام
+                  نکرده‌اید؟</a>
+              </div>
+
+              <!-- email -->
+
+              <label class="border-black px-5 relative text-center left-24 bg-white top-10" for="user_name">
+                ایمیل
+              </label>
+              <div class="border-black flex h-6000 w-10/12 rounded-[51px] border border-neutral-300 mx-auto mt-8">
+                <div class="border-neutral-300 w-8 h-7 mt-4 mr-4 py-1 pl-6 border-l">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Iconsax/Linear/messagetext1">
+                      <path id="Vector"
+                        d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19V19Z"
+                        stroke="#1E1E1E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path id="Vector_2" d="M7 8H17M7 13H13" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                  </svg>
+                </div>
+                <input type="text" name="user_name" class="border-black bg-inherit w-80 h-full outline-none px-5"
+                  id="user_name" placeholder=" example@email.com" />
+              </div>
+
+              <!-- password -->
+              <label class="border-black px-5 relative text-center left-24 bg-white top-10" for="login_password">
+                رمز عبور
+              </label>
+              <div class="border-black flex h-6000 w-10/12 rounded-[51px] border border-neutral-300 mx-auto mt-8">
+                <div class="border-neutral-300 w-8 h-7 mt-4 mr-4 py-1 pl-6 border-l">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Iconsax/Linear/lock">
+                      <path id="Vector"
+                        d="M6 10V8C6 4.69 7 2 12 2C17 2 18 4.69 18 8V10M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2" d="M15.996 16H16.006M11.995 16H12.005M7.995 16H8.003" stroke="black"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+                </div>
+                <input type="" name="login_password" class="border-black bg-inherit w-11/12 h-full outline-none px-5"
+                  id="login_password" placeholder=" حداقل 8 کاراکتر " />
+                <div class="w-8 h-8 mt-5">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Iconsax/Linear/eye">
+                      <path id="Vector"
+                        d="M11.685 9C11.685 10.485 10.485 11.685 9 11.685C7.515 11.685 6.315 10.485 6.315 9C6.315 7.515 7.515 6.315 9 6.315C10.485 6.315 11.685 7.515 11.685 9Z"
+                        stroke="#D6D6D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2"
+                        d="M9 15.2025C11.6475 15.2025 14.115 13.6425 15.8325 10.9425C16.5075 9.885 16.5075 8.1075 15.8325 7.05C14.115 4.35 11.6475 2.79 9 2.79C6.3525 2.79 3.885 4.35 2.1675 7.05C1.4925 8.1075 1.4925 9.885 2.1675 10.9425C3.885 13.6425 6.3525 15.2025 9 15.2025Z"
+                        stroke="#D6D6D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- button -->
+              <div
+                class="px-4 h-12 w-[160px]  my-11 mx-auto bg-custom-blue rounded-2xl text-center text-white text-base font-bold font-['Yekan Bakh FaNum']">
+                <a href="#" class="flex leading-10">
+                  ورود به حساب
+                  <svg class="pr-2 mt-1" width="35" height="35" viewBox="0 0 24 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.57 6.42999L3.5 12.5L9.57 18.57M20.5 12.5H3.67" stroke="white" stroke-width="1.5"
+                      stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- button two -->
+        <div
+          class="max-lg:pointer max-lg:bg-custom-orange max-lg:mx-1 max-lg:px-2 max-lg:h-12 max-lg:w-171 max-lg:mt-20 max-lg:text-center max-lg:rounded-xl max-lg:text-white max-lg:text-xl max-lg:font-bold max-lg:font-['Yekan Bakh FaNum']">
+          <a class="leading-10" href="../src/register.html"> ثبت نام</a>
+        </div>
+      </div>
+      <!-- main page -->
+      <div class="h-1/3 py-16 max-xxl:py-11">
+        <h1 class="font-['Yekan Bakh FaNum'] text-white text-h font-black m-auto break-keep h-14 w-454  text-center max-ssm:text-base max-ssm:w-full max-sm:w-full">
+          صرافی ارز دیجیتال نیوکوین اسپیس
+        </h1>
+        <h2 class="text-center text-white text-xl font-medium font-['Yekan Bakh FaNum'] w-96 h-62  m-auto max-ssm:w-full max-ssm:text-sm max-ssm:p-2 max-sm:w-full">
+          خرید و فروش امن بیت‌کوین و ارزهای دیجیتال به بزرگترین بازار ارز
+          دیجیتال ایران بپیوندید
+        </h2>
+      </div>
+      <div class="h-2/3 max-lg:h-3/6 ">
+        <img class=" max-h-[600px] max-lg:max-h-[350px] max-lg:w-full rounded-tr-2xl rounded-br-2xl m-auto p-8"
+          src="../Rectangle 2.svg" alt="svg thing" />
+      </div>
+    </div>
+
+
+    <!-- part2 -->
+
+    <div class="bg-white w-1/2 rounded-l-2xl max-lg:hidden py-5">
+      <div class="relative top-3 ">
+        <article>
+          <img
+            class=" mx-auto max-xxl:w-[90px] max-xxl:h-[90px] max-2xl:mx-auto max-2xl:mt-9 max-2xl:w-[90px] max-2xl:h-[85px]"
+            src="../Logo.svg" alt="logo thing" />
+        </article>
+        <article class="mb-8">
+          <h3
+            class="mx-auto max-2xl:text-[25px] max-xxl:text-[20px] text-center w-232 py-2 text-black text-[35px] font-black font-['Yekan Bakh FaNum']">
+            ورود به داشبورد
+          </h3>
+          <div class=" mx-auto w-1/2 text-center py-2">
+            <a href="../src/register.html"
+              class="text-blue-500 text-center mx-auto text-xl max-xxl:text-lg font-bold font-['Yekan Bakh FaNum'] ">هنوز
+              ثبت
+              نام نکرده‌اید؟</a>
+          </div>
+        </article>
+
+        <article class="h-2/5 ">
+          <!-- email -->
+          <label class="border-black px-5 relative text-center mr-20 bg-white top-3" for="user_name">
+            ایمیل
+          </label>
+          <div class="border-black flex h-6000 w-10/12 rounded-[51px] border border-neutral-300 mx-auto  ">
+            <div class="border-neutral-300 w-8 h-7 mt-4 mr-4 py-1 pl-6 border-l">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Iconsax/Linear/messagetext1">
+                  <path id="Vector"
+                    d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19V19Z"
+                    stroke="#1E1E1E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path id="Vector_2" d="M7 8H17M7 13H13" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+            <input type="text" name="user_name" class="border-black bg-inherit w-80 h-full outline-none px-5" id="user_name"
+              placeholder=" example@email.com" />
+          </div>
+
+          <!-- password -->
+          <label class="border-black w-20 absolute text-center mt-4 mr-20 bg-white" for="login_password">
+            رمز عبور
+          </label>
+          <div class="border-black flex h-6000 w-10/12 rounded-[51px] border border-neutral-300 mx-auto mt-8  ">
+            <div class="border-neutral-300 w-8 h-7 mt-4 mr-4 py-1 pl-6 border-l">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Iconsax/Linear/lock">
+                  <path id="Vector"
+                    d="M6 10V8C6 4.69 7 2 12 2C17 2 18 4.69 18 8V10M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path id="Vector_2" d="M15.996 16H16.006M11.995 16H12.005M7.995 16H8.003" stroke="black"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+            <input type="" name="login_password" class="border-black bg-inherit w-11/12 h-full outline-none px-5"
+              id="login_password" placeholder=" حداقل 8 کاراکتر " />
+            <div class="w-8 h-8 mt-5">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Iconsax/Linear/eye">
+                  <path id="Vector"
+                    d="M11.685 9C11.685 10.485 10.485 11.685 9 11.685C7.515 11.685 6.315 10.485 6.315 9C6.315 7.515 7.515 6.315 9 6.315C10.485 6.315 11.685 7.515 11.685 9Z"
+                    stroke="#D6D6D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path id="Vector_2"
+                    d="M9 15.2025C11.6475 15.2025 14.115 13.6425 15.8325 10.9425C16.5075 9.885 16.5075 8.1075 15.8325 7.05C14.115 4.35 11.6475 2.79 9 2.79C6.3525 2.79 3.885 4.35 2.1675 7.05C1.4925 8.1075 1.4925 9.885 2.1675 10.9425C3.885 13.6425 6.3525 15.2025 9 15.2025Z"
+                    stroke="#D6D6D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </article>
+        <article>
+          <!-- button -->
+          <div
+            class="px-4 h-12 w-171  mx-auto bg-custom-blue rounded-2xl text-center text-white text-base font-bold font-['Yekan Bakh FaNum']">
+            <a href="#" class="flex leading-10">
+              ورود به حساب
+              <svg class="pr-2 mt-1" width="35" height="35" viewBox="0 0 24 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.57 6.42999L3.5 12.5L9.57 18.57M20.5 12.5H3.67" stroke="white" stroke-width="1.5"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.openModal = function (modalId) {
+      document.getElementById(modalId).style.display = "block";
+      document
+        .getElementsByTagName("body")[0]
+        .classList.add("overflow-y-hidden");
+    };
+
+    window.closeModal = function (modalId) {
+      document.getElementById(modalId).style.display = "none";
+      document
+        .getElementsByTagName("body")[0]
+        .classList.remove("overflow-y-hidden");
+    };
+
+    // Close all modals when press ESC
+    document.onkeydown = function (event) {
+      event = event || window.event;
+      if (event.keyCode === 27) {
+        document
+          .getElementsByTagName("body")[0]
+          .classList.remove("overflow-y-hidden");
+        let modals = document.getElementsByClassName("modal");
+        Array.prototype.slice.call(modals).forEach((i) => {
+          i.style.display = "none";
+        });
+      }
+    };
+  </script>
+</body>
+
+</html>

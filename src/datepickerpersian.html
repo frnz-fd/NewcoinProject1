@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/kamadatepicker.min.css" />
+
+        <title>datepicker</title>
+      </head>
+    
+  
+</head>
+
+<body>
+    <!-- Your HTML content goes here -->
+
+    <input type="text" id="clndr">
+    
+
+
+    <script src="../src/jquery.js"></script>
+    <script src="../src/kamadatepicker.min.js"></script>
+
+
+    <script>
+		kamaDatepicker('clndr', { buttonsColor: "red" });
+
+		var customOptions = {
+			placeholder: "روز / ماه / سال"
+			, twodigit: false
+			, closeAfterSelect: false
+			, nextButtonIcon: "fa fa-arrow-circle-right"
+			, previousButtonIcon: "fa fa-arrow-circle-left"
+			, buttonsColor: "blue"
+			, forceFarsiDigits: true
+			, markToday: true
+			, markHolidays: true
+			, highlightSelectedDay: true
+			, sync: true
+			, gotoToday: true
+		}
+		kamaDatepicker('date2', customOptions);
+
+		kamaDatepicker('date3', {
+			nextButtonIcon: "assets/timeir_prev.png"
+			, previousButtonIcon: "assets/timeir_next.png"
+			, forceFarsiDigits: true
+			, markToday: true
+			, markHolidays: true
+			, highlightSelectedDay: true
+			, sync: true
+			, pastYearsCount: 0
+			, futureYearsCount: 3
+			, swapNextPrev: true
+			, holidays: HOLIDAYS // from kamadatepicker.holidays.js
+			, disableHolidays: true
+		});
+
+		kamaDatepicker('date4', {
+			position: 'top' // top, bottom or auto
+		});
+
+		kamaDatepicker('date5-1', {
+			position: 'auto' // top, bottom or auto
+			, parentId: 'date5-parent'
+		});
+		kamaDatepicker('date5-2', {
+			position: 'auto' // top, bottom or auto
+			, parentId: 'date5-parent'
+		});
+
+		// for testing sync functionallity
+		$("#date2").val("1311/10/01");
+
+		// init without ids inputs
+		document.querySelectorAll('#without-ids input').forEach(input => { kamaDatepicker(input); });
+	</script>
+
+</body>
+
+</html>

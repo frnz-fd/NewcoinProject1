@@ -1,0 +1,1457 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>dashboard</title>
+</head>
+
+<body dir="rtl" class="bg-body-blue p-7 max-ssm:p-1">
+
+    <!-- container  -->
+    <div
+        class="h-[850px] max-xl:h-[1110px] m-auto w-full flex max-sm:m-auto max-lg:mx-auto max-sm:w-9/12 max-ssm:min-w-[350px] max-sm:min-w-[420px] max-ssm:mx-auto">
+        <!--there are two parts -->
+
+        <div class="bg-white w-1/5 h-full max-xl:h-full max-lg:hidden rounded-2xl ml-5"><!-- part1 -->
+            <!-- right top -->
+            <div class="border-b border-neutral-300 w-48 h-32 mx-auto">
+                <svg class="mx-auto" width="88" height="88" viewBox="0 0 161 154" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_7_39)">
+                        <rect x="20" y="20" width="101" height="94" rx="32" fill="#EA8E38" />
+                        <path
+                            d="M67.828 45.4151L96.0321 73.505V88.5849H82.8702V78.926L62.3852 58.5237H58.1298V88.5849H44.968V45.4151H67.828ZM82.8702 60.3964V45.4151H96.0321V60.3964H82.8702Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_7_39" x="0" y="0" width="161" height="154" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dx="10" dy="10" />
+                            <feGaussianBlur stdDeviation="15" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7_39" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_39" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+                <h1 class="text-center text-stone-900 text-xl font-black font-['Yekan Bakh FaNum']">نیوکوین اسپیس</h1>
+            </div>
+            <!-- right bottom -->
+            <ul class="list-inside m-auto p-1 align-text-top mt-6 w-full">
+                <li
+                    class="rounded-2xl py-3 px-4 mx-auto w-11/12 h-12 bg-custom-blue list-image-[url(../home3.jpg)] text-white text-base font-bold font-['Yekan Bakh FaNum']">
+
+                    <span class="relative bottom-2"> داشبورد</span>
+                </li>
+                <li
+                    class="py-3 px-4 mx-auto w-11/12 align-text-top h-12 list-image-[url(../arrangehorizontalsquare.jpg)] text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+                    <span class="relative bottom-2">خرید و فروش</span>
+                </li>
+                <li
+                    class="py-3 px-4 mx-auto w-11/12 align-text-top list-image-[url(../activity.jpg)] h-12 text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+
+                    <span class="relative bottom-2">گزارش بازار</span>
+                </li>
+                <li
+                    class="py-3 px-4 mx-auto w-11/12 align-text-top list-image-[url(../emptywallet.jpg)] h-12 text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+
+                    <span class="relative bottom-2">کیف پول</span>
+                </li>
+                <li
+                    class="py-3 px-4 mx-auto w-11/12 align-text-top text-red-500 text-base font-bold font-['Yekan Bakh FaNum'] list-image-[url(../logout.jpg)] h-12">
+                    <span class="relative bottom-2">خروج</span>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="bg-inherit w-4/5 max-lg:w-full"> <!-- part2 -->
+            <!-- نوار بالای صفحه -->
+            <nav class=" w-full h-[79px] bg-white rounded-2xl my-1 flex justify-between items-center">
+                <div class="mr-4 w-10 h-10">
+                    <!-- hamburger menu button -->
+                    <button class="navbar-burger flex items-center text-blue-600 p-3 lg:hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Iconsax/Linear/hambergermenu">
+                                <path id="Vector" d="M3 7H21M3 12H21M3 17H21" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- hamburger menu -->
+                <div class="navbar-menu relative z-50 hidden">
+                    <!-- backdrop -->
+                    <div class="navbar-backdrop fixed  inset-0 bg-gray-800 opacity-25"></div>
+                    <div class="bg-white min-w-1/5 h-full max-xl:h-full fixed top-0 right-0 rounded-2xl ml-5">
+                        <!-- right top -->
+                        <div class="border-b border-neutral-300 w-48 h-32 mx-auto">
+                            <svg class="mx-auto" width="88" height="88" viewBox="0 0 161 154" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_7_39)">
+                                    <rect x="20" y="20" width="101" height="94" rx="32" fill="#EA8E38" />
+                                    <path
+                                        d="M67.828 45.4151L96.0321 73.505V88.5849H82.8702V78.926L62.3852 58.5237H58.1298V88.5849H44.968V45.4151H67.828ZM82.8702 60.3964V45.4151H96.0321V60.3964H82.8702Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_7_39" x="0" y="0" width="161" height="154"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="10" dy="10" />
+                                        <feGaussianBlur stdDeviation="15" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_7_39" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_39"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h1 class="text-center text-stone-900 text-xl font-black font-['Yekan Bakh FaNum']">نیوکوین
+                                اسپیس</h1>
+                        </div>
+                        <!-- right bottom -->
+                        <ul class="list-inside m-auto p-1 align-text-top mt-6 w-full">
+                            <li
+                                class="rounded-2xl py-3 px-4 mx-auto w-11/12 h-12 bg-custom-blue list-image-[url(../home3.jpg)] text-white text-base font-bold font-['Yekan Bakh FaNum']">
+
+                                <span class="relative bottom-2"> داشبورد</span>
+                            </li>
+                            <li
+                                class="py-3 px-4 mx-auto w-11/12 align-text-top h-12 list-image-[url(../arrangehorizontalsquare.jpg)] text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+                                <span class="relative bottom-2">خرید و فروش</span>
+                            </li>
+                            <li
+                                class="py-3 px-4 mx-auto w-11/12 align-text-top list-image-[url(../activity.jpg)] h-12 text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+
+                                <span class="relative bottom-2">گزارش بازار</span>
+                            </li>
+                            <li
+                                class="py-3 px-4 mx-auto w-11/12 align-text-top list-image-[url(../emptywallet.jpg)] h-12 text-stone-900 text-base font-bold font-['Yekan Bakh FaNum']">
+
+                                <span class="relative bottom-2">کیف پول</span>
+                            </li>
+                            <li
+                                class="py-3 px-4 mx-auto w-11/12 align-text-top text-red-500 text-base font-bold font-['Yekan Bakh FaNum'] list-image-[url(../logout.jpg)] h-12">
+                                <span class="relative bottom-2">خروج</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="flex">
+                    <div class="mt-3"><svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 10.44V13.77M12.02 6C8.34002 6 5.36002 8.98 5.36002 12.66V14.76C5.36002 15.44 5.08002 16.46 4.73002 17.04L3.46002 19.16C2.68002 20.47 3.22002 21.93 4.66002 22.41C9.4413 24 14.6087 24 19.39 22.41C19.7055 22.3048 19.9933 22.13 20.2322 21.8986C20.4711 21.6671 20.6549 21.385 20.7701 21.073C20.8853 20.761 20.9289 20.4271 20.8978 20.096C20.8666 19.7649 20.7614 19.445 20.59 19.16L19.32 17.04C18.97 16.46 18.69 15.43 18.69 14.76V12.66C18.68 9 15.68 6 12.02 6Z"
+                                stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path
+                                d="M15.33 22.82C15.33 24.65 13.83 26.15 12 26.15C11.09 26.15 10.25 25.77 9.64998 25.17C9.04998 24.57 8.66998 23.73 8.66998 22.82"
+                                stroke="black" stroke-width="1.5" stroke-miterlimit="10" />
+                            <circle cx="21" cy="6" r="6" fill="#29C57A" />
+                        </svg>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-custom-blue overflow-hidden mx-4">
+                        <img class="object-top object-fill h-16 w-16" src="../rectangle17.jpg">
+                    </div>
+                </div>
+            </nav>
+            <!-- اسلایدر -->
+            <div class="bg-inherit rounded-2xl h-[171px] my-1 mt-4 flex">
+                <!-- button right -->
+                <div id="right" class="h-fit my-auto"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Iconsax/Linear/arrowsquareright">
+                            <path id="Vector"
+                                d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_2" d="M10.74 15.53L14.26 12L10.74 8.46997" stroke="#1E1E1E"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="mx-auto h-[171px] w-[1000px] relative overflow-hidden">
+                    <ul id="gal" class="left-0 m-0 p-0 relative flex justify-between w-[2000px] duration-500">
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px]  bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px]  bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="w-[248px] h-[171px] bg-white rounded-2xl border border-neutral-300 ml-4">
+                            <div class="flex justify-between mt-3 w-11/12 mx-auto">
+                                <div class="flex items-center">
+                                    <div class=""><svg width="46" height="46" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                                <path id="Vector"
+                                                    d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                    fill="#F7931A" />
+                                                <path id="Vector_2"
+                                                    d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_25_285">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="mr-2">
+                                        <div
+                                            class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">
+                                            بیتکوین</div>
+                                        <div
+                                            class="text-right text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">
+                                            BTC</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="text-left text-emerald-500 text-base font-bold font-['Yekan Bakh FaNum']">
+                                        1.68%+</div>
+                                    <div class="text-center text-stone-900 text-sm font-bold font-['Yekan Bakh FaNum']">
+                                        16,876 دلار</div>
+                                </div>
+                            </div>
+                            <div class="mt-6"><svg class="mx-auto" width="220" height="69" viewBox="0 0 220 69"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="NBcharts-lineChats">
+                                        <g id="line &#38; Area">
+                                            <path id="Area-1" opacity="0.51" fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2V69H5V37Z"
+                                                fill="url(#paint0_linear_22_110)" />
+                                            <path id="Line-1"
+                                                d="M5 37C44 37 18.5 5 57.5 5C96.5 5 71 21 110 21C149 21 123.5 30.6 162.5 30.6C201.5 30.6 176 24.2 215 24.2"
+                                                stroke="#2AC479" stroke-width="3" stroke-linejoin="round" />
+                                        </g>
+                                        <g id="Points">
+                                            <circle id="Point-10" cx="5" cy="37" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-20" cx="57.5" cy="5" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-15" cx="110" cy="21" r="3.5" fill="white" stroke="#2AC479"
+                                                stroke-width="2" />
+                                            <circle id="Point-12" cx="162.5" cy="30.6" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                            <circle id="Point-14" cx="215" cy="24.2" r="3.5" fill="white"
+                                                stroke="#2AC479" stroke-width="2" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_22_110" x1="110" y1="5" x2="110" y2="69"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AC479" />
+                                            <stop offset="1" stop-color="#2AC479" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- button left -->
+                <div id="left" class=" h-fit my-auto"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Iconsax/Linear/arrowsquareleft">
+                            <path id="Vector"
+                                d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path id="Vector_2" d="M13.26 15.53L9.73999 12L13.26 8.46997" stroke="#1E1E1E"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- بخش پایین -->
+            <div class="bg-inherit  my-1 h-4/6 max-xl:h-[830px] max-md:h-[1300px] mt-4 flex justify-content max-md:block">
+                <!-- سه تیکه راست -->
+                <div class="max-xl:h-[278px] max-md:h-[830px] w-2/3 max-md:w-full ml-5 max-xl:block  grid grid-rows-2 grid-flow-col gap-4 ">
+                    <!-- دارایی‌های کیف پول -->
+                    <article class="max-md:mx-auto  max-xl:h-fit  bg-white p-2 col-span-2 max-xl:col-span-4 rounded-2xl ...">
+                        <h2
+                            class="max-xl:hidden blocktext-black text-base font-bold font-['Yekan Bakh FaNum'] h-14 w-fit p-1">
+                            دارایی‌های
+                            کیف
+                            پول
+                        </h2>
+                        <div class="flex justify-around">
+                            <div class="w-fit h-fit ">
+                                <h2
+                                    class="hidden max-xl:block text-black text-base font-bold font-['Yekan Bakh FaNum'] h-14 w-fit p-1">
+                                    دارایی‌های
+                                    کیف
+                                    پول
+                                </h2>
+                                <ul class="list-disc mr-5 h-40  py-6">
+                                    <li class="text-custom-orange h-11"><span
+                                            class="text-black ml-3">بیتکوین</span><span
+                                            class="text-center text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">45
+                                            درصد</span>
+                                    </li>
+                                    <li class="text-chart-blue h-11"><span class="text-black ml-3">اتریوم</span><span
+                                            class="text-center text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">30
+                                            درصد</span>
+                                    </li>
+                                    <li class="text-chart-gray h-11"><span class="text-black ml-3">ترون</span><span
+                                            class="text-center text-zinc-400 text-[13px] font-bold font-['Yekan Bakh FaNum']">25
+                                            درصد</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="h-fit w-fit max-xl:mt-5"><img src="../NBcharts-PIE.jpg"></div>
+                        </div>
+                    </article>
+                    <!-- نمودار -->
+                    <article class="max-xl:mt-5 h-fit p-2 bg-white col-span-4 rounded-2xl ..."><img
+                            class="object-fill rounded-2xl w-[720px] h-[250px] mx-auto mt-3" src="../img1.png">
+                    </article>
+                    <!-- ارزش معاملات هفته -->
+                    <article
+                        class="max-xl:mt-5 max-xl:h-[278px]  p-2  bg-white col-span-2 max-xl:col-span-4 rounded-2xl row-span-2...">
+                        <h2 class="text-black text-base font-bold font-['Yekan Bakh FaNum'] h-14 p-2">ارزش معاملات هفته
+                            گذشته</h2>
+                        <div class="w-fit mx-auto mt-5"><img src="../NBcharts-columnChats.jpg"></div>
+                    </article>
+
+                </div>
+                <!--محبوب ترین کوین ها  -->
+                <article class="bg-white h-full w-1/3 max-md:w-full max-md:h-1/3 max-md:mt-5 rounded-2xl overflow-hidden  shadow-custom">
+                    <div class="flex justify-between w-11/12 mx-auto mt-3">
+                        <h2 class="text-center text-black text-base font-bold font-['Yekan Bakh FaNum']">محبوب ترین کوین
+                            ها</h2>
+                        <div class="w-16 h-8 rounded-lg border border-stone-300 justify-center items-center flex">
+
+                            <div class="text-center text-zinc-400 text-sm font-medium font-['Yekan Bakh FaNum'] ">هفته
+                            </div>
+                            <div class="w-3 h-3 relative mt-2 mr-1"><svg width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Iconsax/Linear/arrowdown2">
+                                        <path id="Vector"
+                                            d="M9.95998 4.47498L6.69998 7.73498C6.31498 8.11998 5.68498 8.11998 5.29998 7.73498L2.03998 4.47498"
+                                            stroke="#B4B4B4" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between w-11/12 mx-auto mt-8">
+                        <div class="text-center text-black text-sm font-medium font-['Yekan Bakh FaNum']">نام</div>
+                        <div class="text-center text-black text-sm font-medium font-['Yekan Bakh FaNum']">24 ساعت گذشته
+                        </div>
+                    </div>
+
+
+                    <ul class="mt-3 h-[450px] max-xl:h-[720px] overflow-scroll py-4">
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                        <li class="flex justify-between border-b border-neutral-300 w-11/12 mx-auto h-12 items-center">
+                            <div class="w-fit flex">
+                                <div class="w-fit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Bitcoin logo" clip-path="url(#clip0_25_285)">
+                                            <path id="Vector"
+                                                d="M23.641 14.9098C22.0371 21.3246 15.5339 25.2448 9.08985 23.6409C2.6751 22.0371 -1.24515 15.5338 0.358726 9.08982C1.9626 2.67507 8.46585 -1.24518 14.9099 0.358696C21.3246 1.96257 25.2449 8.46582 23.641 14.9098Z"
+                                                fill="#F7931A" />
+                                            <path id="Vector_2"
+                                                d="M17.286 10.2776C17.5238 8.6741 16.3061 7.81273 14.643 7.24873L15.1774 5.08123L13.8709 4.75498L13.3365 6.8636C12.9803 6.77435 12.624 6.68548 12.2678 6.62585L12.8021 4.51723L11.4956 4.19098L10.9613 6.35848C10.6643 6.29923 10.3969 6.2396 10.1299 6.15073L8.31863 5.70523L7.96238 7.10098L8.91263 7.33873C9.44701 7.4576 9.53626 7.81385 9.53626 8.11123L8.91151 10.575C8.94151 10.575 9.00076 10.605 9.06001 10.605C9.03001 10.605 8.97076 10.575 8.91151 10.575L8.05013 14.0197C7.99088 14.1682 7.81238 14.4322 7.45613 14.346C7.45613 14.376 6.50588 14.1082 6.50588 14.1082L5.85263 15.6232L7.57501 16.0357C7.90126 16.125 8.19863 16.2139 8.52526 16.2735L7.99088 18.471L9.29738 18.7972L9.83176 16.6297L10.875 16.9012L10.3406 19.0687L11.6471 19.395L12.1815 17.1975C14.4383 17.61 16.1014 17.4649 16.8143 15.4162C17.3786 13.7831 16.7843 12.8287 15.5966 12.2089C16.4876 12.0307 17.1116 11.4664 17.2894 10.2787L17.286 10.2776ZM14.2868 14.5237C13.8743 16.1569 11.139 15.2662 10.248 15.0581L10.9605 12.1481C11.8515 12.3559 14.7023 12.8014 14.2868 14.5237ZM14.6993 10.2772C14.343 11.7622 12.0266 11.0197 11.2841 10.8116L11.9374 8.1686C12.6799 8.37635 15.0851 8.70298 14.6993 10.2772Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_25_285">
+                                                <rect width="24" height="24" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span
+                                    class="w-fit text-center text-black text-sm font-bold font-['Yekan Bakh FaNum'] mx-1">بیتکوین</span>
+                                <span
+                                    class="w-fit text-center text-zinc-400 text-xs font-bold font-['Yekan Bakh FaNum'] mt-1">BTC</span>
+                            </div>
+                            <div class="w-fit text-center text-green-500 text-sm font-bold font-['Yekan Bakh FaNum'] ">
+                                1.68%+</div>
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        pos = 0;
+
+        function move(i) {
+            pos = -100 * i;
+            gal.style.right = pos + "";
+        }
+
+        left.onclick = function () {
+
+            if (pos > -1000) {
+                pos = pos - 250;
+                gal.style.right = pos + "";
+            }
+            else if (pos == -1000) {
+                pos = 0;
+                gal.style.right = pos + "";
+            }
+
+        }
+
+        right.onclick = function () {
+            if (pos < 0) {
+                pos = pos + 250;
+
+                gal.style.right = pos + "";
+            }
+            else if (pos == 0) {
+                pos = +250;
+                pos = pos - 1250;
+                gal.style.right = pos + "";
+
+            }
+        }
+
+
+
+
+
+        // Burger menus
+        document.addEventListener('DOMContentLoaded', function () {
+            // open
+            const burger = document.querySelectorAll('.navbar-burger');
+            const menu = document.querySelectorAll('.navbar-menu');
+
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function () {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
